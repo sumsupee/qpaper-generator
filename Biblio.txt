@@ -1,0 +1,9 @@
+Bibliography-
+1. Center Align Function
+http://www.cplusplus.com/forum/general/44198/, by Snaef98
+
+2. Gitignore
+https://www.youtube.com/watch?v=aj8ifYrzGas,by twistedequations
+
+3. Help with codeblocks
+http://www.sci.brooklyn.cuny.edu/~goetz/codeblocks/codeblocks-instructions.pdf
