@@ -37,3 +37,4 @@ qpaper-gem/obj/*
 
 *.layout
 *.depend
+*.txt
