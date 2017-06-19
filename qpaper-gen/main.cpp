@@ -29,8 +29,9 @@ int home()
     cout<<"Please switch to full-screen for better viewing experience...";
     cout<<"\n\tChoose the following options:";
     cout<<"\n1. Generate Question Paper";
-    cout<<"\n2. About";
-    cout<<"\n3. EXIT\n\t Your response:";
+    cout<<"\n2. Instructions";
+    cout<<"\n3. About";
+    cout<<"\n4. EXIT\n\t Your response:";
 
     cin>>response;
     return 0;
@@ -190,6 +191,16 @@ if (response==1)
     else if (response==2)
     {
         instructions://function of About page
+            system("cls");
+            cout<<"\n\t\tInstructions for creating the database:";
+            cout<<"\n\t\t\t1. The database should have the following columns in proper order QID(INTEGER), Difficulty(TEXT), Question(TEXT) and Marks(INTEGER).";
+            cout<<"\n\t\t\t2. You can use DB Browser for Sqlite, which will be even easier to enter data manually in a database. ";
+            cout<<"\n\t\t\t3. There are three levels of difficulty, i.e., E(Easy)/M(Medium)/H(Hard).";
+            cout<<"\n\t\t\t4. The program wont run(or may give wrong results) if the database isn't in a proper order.";
+            cout<<"\n\t\t\t5. A sample.db has been provided. ";
+
+            cout<<"\n\nThe output will be generated as a .txt file- qpaper.txt, so that if you wish to edit the questions or wish to add more according to your wish you can make changes freely.";
+            cout<<"\n\tIMPORTANT! Copy the contents of the text file or duplicate it into another folder as new data will be fed into it once the program re-runs. ";
 
         //char entry required to go to home
         cout<<"\n\t\tPress any key to go to HOME";
@@ -199,6 +210,24 @@ if (response==1)
         goto home;
     }
     else if(response==3)
+    {
+        system("cls");
+        char wel[20]="QPAPER-GENERATOR";
+        char abt[6]="ABOUT";
+        centerstring(wel);cout<<endl;
+        centerstring(abt);cout<<endl;
+        cout<<"\n\t\tProgram to generate question papers from a question bank(database-.db file).";
+        cout<<"\nThis is program is meant to provide questions randomly as a suggestion and thus it avoids biases and preferences caused when you select questions yourself from a question bank.";
+        cout<<"\n\n\t\tCheck for updates or compile the source code on your own, go to: www.github.com/sumsupee/qpaper-generator/ ";
+        cout<<"\n\n\t\tCreated by Sumedh Supe, QPAPER-GENERATOR v1.00.00";
+        //char entry required to go to home
+        cout<<"\n\n\t\tPress any key to go to HOME";
+        char yo;
+        cin>>yo;
+        system("cls");
+        goto home;
+    }
+    else if(response==4)
     {
         exit(0);
     }
