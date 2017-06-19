@@ -111,7 +111,7 @@ if (response==1)
    cout<<"\n";
     Repeatif: sleep_for(nanoseconds(10));
     sleep_until(system_clock::now() + seconds(1));
-    cout<<"\n\tPlease enter the difficulty of the paper- ";
+    cout<<"\n\tPlease enter the difficulty of the paper(E/M/H)- ";
     char diff;
     cin>>diff;
     if(diff=='E' || diff=='e' || diff=='M' || diff=='m' || diff=='H' || diff=='h')
