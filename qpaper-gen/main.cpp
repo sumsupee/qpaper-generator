@@ -219,7 +219,7 @@ if (response==1)
         cout<<"\n\t\tProgram to generate question papers from a question bank(database-.db file).";
         cout<<"\nThis is program is meant to provide questions randomly as a suggestion and thus it avoids biases and preferences caused when you select questions yourself from a question bank.";
         cout<<"\n\n\t\tCheck for updates or compile the source code on your own, go to: www.github.com/sumsupee/qpaper-generator/ ";
-        cout<<"\n\n\t\tCreated by Sumedh Supe and Akshat Mantri, QPAPER-GENERATOR v1.00.00";
+        cout<<"\n\n\t\tCreated by Sumedh Supe and Akshat Mantri, QPAPER-GENERATOR v1.00.00 June 2017";
         //char entry required to go to home
         cout<<"\n\n\t\tPress any key to go to HOME";
         char yo;
